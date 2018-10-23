@@ -1,6 +1,9 @@
 $( document ).ready(function() {
     // alert("works");
 
+     setTimeout(function(){ 
+    	$('.element').removeClass('hidden'); }, 100);
+
     var tl = new TimelineMax();
     tl.from('.stand', 0.5, {scaleY: 0, transformOrigin: "bottom", ease: Power2.easeOut, delay: 0.4})
     	.from('.stand-connector', 0.5, {scaleY: 0, transformOrigin: "bottom", ease: Bounce.easeOut})
